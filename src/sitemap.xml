@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/</loc>
+    <loc>https://velorainfo.netlify.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/about</loc>
+    <loc>https://velorainfo.netlify.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/skills</loc>
+    <loc>https://velorainfo.netlify.app/skills</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/services</loc>
+    <loc>https://velorainfo.netlify.app/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/projects</loc>
+    <loc>https://velorainfo.netlify.app/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://velora-technology-solutions.netlify.app/contact</loc>
+    <loc>https://velorainfo.netlify.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
