@@ -1,0 +1,170 @@
+<div class="page-wrapper">
+  <!-- Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Who We Are</span>
+      <h1 class="section-title">Velora Technology Solutions</h1>
+      <div class="divider"></div>
+      <p class="section-desc">
+        A remote-first freelancing company dedicated to delivering innovative, reliable, and scalable digital solutions for businesses worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text" reveal direction="left">
+          <span class="section-tag">Our Story</span>
+          <h2 class="about-title">Transforming Ideas Into Digital Excellence</h2>
+          <p>Velora Technology Solutions is a remote-first freelancing company dedicated to delivering innovative, reliable, and scalable digital solutions for businesses, startups, and entrepreneurs worldwide. We specialize in transforming ideas into high-quality digital products that help organizations grow, streamline operations, and enhance customer experiences.</p>
+          <p>Our team is passionate about building modern web applications, mobile applications, and custom software solutions that combine exceptional performance, intuitive design, and long-term scalability. From initial consultation and strategic planning to development, deployment, and ongoing support, we provide end-to-end services tailored to each client's unique goals.</p>
+          <p>At Velora Technology Solutions, we believe that successful software is built through collaboration, transparency, and a commitment to excellence. Whether you're launching a new digital product, modernizing an existing platform, or developing a custom business solution, we are committed to transforming your vision into innovative digital experiences that drive success.</p>
+          <div class="about-badges">
+            <div class="badge"><i class="fas fa-check-circle"></i> Remote-First Company</div>
+            <div class="badge"><i class="fas fa-check-circle"></i> India Based</div>
+            <div class="badge"><i class="fas fa-check-circle"></i> Global Clients</div>
+            <div class="badge"><i class="fas fa-check-circle"></i> End-to-End Services</div>
+          </div>
+        </div>
+
+        <div class="about-visual" reveal direction="right" [delay]="150">
+          <div class="about-card">
+            <div class="about-logo">
+              <img src="assets/images/veloraLogo.png" alt="Velora Technology Solutions" />
+            </div>
+            <div class="about-motto">
+              <span>Code</span>
+              <span class="dot"></span>
+              <span>Create</span>
+              <span class="dot"></span>
+              <span>Solve</span>
+              <span class="dot"></span>
+              <span>Grow</span>
+            </div>
+            <div class="about-stats-mini">
+              <div>
+                <strong>5+</strong>
+                <span>Years Exp.</span>
+              </div>
+              <div>
+                <strong>3+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Commitment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Model -->
+  <section class="section work-model-section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Work Model</span>
+        <h2 class="section-title">Remote Development Services for Clients Worldwide</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="work-model-card" reveal [delay]="100">
+        <div class="globe-icon">
+          <i class="fas fa-globe-asia"></i>
+        </div>
+        <div class="work-model-text">
+          <h3>India-Based, Globally Connected</h3>
+          <p>We proudly provide professional remote software development services to clients around the world, delivering high-quality solutions with seamless collaboration, transparent communication, and reliable project execution — regardless of location.</p>
+          <p>Our remote-first approach enables us to collaborate seamlessly with clients across the globe, ensuring efficient communication, timely delivery, and exceptional results.</p>
+        </div>
+      </div>
+      <div class="work-features">
+        <div class="work-feature" reveal [delay]="0">
+          <i class="fas fa-comments"></i>
+          <h4>Transparent Communication</h4>
+          <p>Regular updates and clear channels keep you informed at every stage.</p>
+        </div>
+        <div class="work-feature" reveal [delay]="100">
+          <i class="fas fa-clock"></i>
+          <h4>Timely Delivery</h4>
+          <p>We respect deadlines and ensure projects are delivered on schedule.</p>
+        </div>
+        <div class="work-feature" reveal [delay]="200">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Reliable Execution</h4>
+          <p>Consistent, high-quality output backed by proven development practices.</p>
+        </div>
+        <div class="work-feature" reveal [delay]="300">
+          <i class="fas fa-handshake"></i>
+          <h4>Client Partnership</h4>
+          <p>We work as an extension of your team, aligned with your goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section class="section expertise-section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Our Expertise</span>
+        <h2 class="section-title">What We Excel At</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-item" *ngFor="let item of expertise; let i = index" reveal [delay]="i * 60">
+          <i class="fas fa-check-circle"></i>
+          <span>{{ item }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section team-section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Our Team</span>
+        <h2 class="section-title">Meet the Developers</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" reveal direction="left" [delay]="0">
+          <div class="team-img-wrap">
+            <img src="assets/images/arvinthiamge.png" alt="Arvinth S" />
+          </div>
+          <div class="team-info">
+            <h3>Arvinth S</h3>
+            <span class="team-role">Full Stack Developer</span>
+            <div class="team-exp">
+              <i class="fas fa-briefcase"></i> 5+ Years Experience
+            </div>
+            <div class="team-availability">
+              <span class="status-dot"></span>
+              <span>Available for work</span>
+            </div>
+          </div>
+        </div>
+        <div class="team-card" reveal direction="right" [delay]="150">
+          <div class="team-img-wrap">
+            <img [src]="siddharth" alt="Siddharth S" />
+          </div>
+          <div class="team-info">
+            <h3>Siddharth S</h3>
+            <span class="team-role">Full Stack Developer</span>
+            <div class="team-exp">
+              <i class="fas fa-briefcase"></i> 5+ Years Experience
+            </div>
+            <div class="team-availability">
+              <span class="status-dot"></span>
+              <span>Available for work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

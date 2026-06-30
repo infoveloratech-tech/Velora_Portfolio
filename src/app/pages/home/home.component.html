@@ -1,0 +1,118 @@
+<div class="page-wrapper">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-tag">Your Trusted Technology Partner</span>
+        <h1 class="hero-title">
+          Turning Vision Into
+          <span class="gradient-text"> Reality</span>
+          <br>With Code &amp; Innovation
+        </h1>
+        <p class="hero-desc">
+          At Velora Technology Solutions, we build modern web applications, mobile apps, and custom software that help businesses grow. Our focus is on delivering scalable, secure, and user-friendly digital solutions tailored to your unique needs.
+        </p>
+        <div class="hero-actions">
+          <a routerLink="/contact" class="btn-primary">
+            <i class="fas fa-paper-plane"></i> Contact Us
+          </a>
+          <a routerLink="/projects" class="btn-outline">
+            <i class="fas fa-folder-open"></i> View Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <div class="logo-ring ring-1"></div>
+          <div class="logo-ring ring-2"></div>
+          <div class="logo-ring ring-3"></div>
+          <img src="assets/images/veloraLogo.png" alt="Velora Technology Solutions" class="hero-logo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat" reveal [delay]="0">
+          <span class="stat-number" #counter data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" reveal [delay]="100">
+          <span class="stat-number" #counter data-target="3">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" reveal [delay]="200">
+          <span class="stat-number" #counter data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Commitment</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" reveal [delay]="300">
+          <span class="stat-text">Global</span>
+          <span class="stat-label">Remote Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section services-preview">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Comprehensive Digital Solutions</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="preview-grid">
+        <div class="preview-card" reveal [delay]="0">
+          <div class="preview-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive web applications built with cutting-edge frameworks and best practices.</p>
+        </div>
+        <div class="preview-card" reveal [delay]="100">
+          <div class="preview-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile Apps</h3>
+          <p>Cross-platform mobile applications delivering native performance on iOS and Android.</p>
+        </div>
+        <div class="preview-card" reveal [delay]="200">
+          <div class="preview-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Custom Software</h3>
+          <p>Tailored software solutions engineered to solve your unique business challenges.</p>
+        </div>
+        <div class="preview-card" reveal [delay]="300">
+          <div class="preview-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>App Modernization</h3>
+          <p>Upgrade and rewrite legacy applications with modern tech stacks and architectures.</p>
+        </div>
+      </div>
+      <div class="text-center mt-48" reveal [delay]="400">
+        <a routerLink="/services" class="btn-primary">
+          <i class="fas fa-arrow-right"></i> Explore All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card" reveal>
+        <div class="cta-content">
+          <h2>Ready to Build Something Great?</h2>
+          <p>Let's collaborate to turn your idea into a powerful digital product. We're just a message away.</p>
+        </div>
+        <a routerLink="/contact" class="btn-primary cta-btn">
+          <i class="fas fa-rocket"></i> Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

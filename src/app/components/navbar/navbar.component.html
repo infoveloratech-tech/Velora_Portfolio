@@ -1,0 +1,60 @@
+<nav class="navbar" [class.scrolled]="scrolled()">
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <a routerLink="/" class="nav-logo">
+      <img src="assets/images/veloraLogo.png" alt="Velora Technology Solutions" />
+      <span class="logo-text">
+        <span class="logo-main">Velora</span>
+        <span class="logo-sub">Technology Solutions</span>
+      </span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+
+    <!-- Right Actions -->
+    <div class="nav-actions">
+      <a href="https://linkedin.com/in/honestyrk" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/honestyrk" target="_blank" rel="noopener noreferrer" class="social-btn github-btn" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <button class="theme-toggle" (click)="themeService.toggle()" [attr.aria-label]="themeService.isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+        <i [class]="themeService.isDark() ? 'fas fa-sun' : 'fas fa-moon'"></i>
+      </button>
+      <button class="menu-toggle" (click)="mobileOpen.set(!mobileOpen())" aria-label="Toggle menu">
+        <span [class.open]="mobileOpen()"></span>
+        <span [class.open]="mobileOpen()"></span>
+        <span [class.open]="mobileOpen()"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="mobileOpen()">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="mobileOpen.set(false)">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="mobileOpen.set(false)">About</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active" (click)="mobileOpen.set(false)">Skills</a></li>
+      <li><a routerLink="/services" routerLinkActive="active" (click)="mobileOpen.set(false)">Services</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" (click)="mobileOpen.set(false)">Projects</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="mobileOpen.set(false)">Contact</a></li>
+      <li class="mobile-socials">
+        <a href="https://linkedin.com/in/honestyrk" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/honestyrk" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

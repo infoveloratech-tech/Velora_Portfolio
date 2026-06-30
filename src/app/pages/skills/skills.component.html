@@ -1,0 +1,78 @@
+<div class="page-wrapper">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Our Expertise</span>
+      <h1 class="section-title">Technical Skills</h1>
+      <div class="divider"></div>
+      <p class="section-desc">Technologies and tools we use to build exceptional digital products.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Proficiency</span>
+        <h2 class="section-title">Our Tech Stack</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" *ngFor="let skill of skills; let i = index" reveal [delay]="i * 70">
+          <div class="skill-icon" [style.background]="skill.color + '18'">
+            <img *ngIf="skill.iconType === 'svg'" [src]="skill.svgPath" [alt]="skill.name" />
+            <i *ngIf="skill.iconType === 'fa'" [class]="skill.faIcon" [style.color]="skill.color"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top">
+              <h3>{{ skill.name }}</h3>
+              <span class="skill-pct">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-bar" #barRef [attr.data-level]="skill.level" [attr.data-color]="skill.color">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section logos-section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Tech Logos</span>
+        <h2 class="section-title">Technologies We Love</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="logos-grid">
+        <div class="logo-pill" *ngFor="let skill of skills; let i = index" reveal [delay]="i * 50">
+          <img *ngIf="skill.iconType === 'svg'" [src]="skill.svgPath" [alt]="skill.name" />
+          <i *ngIf="skill.iconType === 'fa'" [class]="skill.faIcon" [style.color]="skill.color"></i>
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section legend-section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Experience Level</span>
+        <h2 class="section-title">Our Skill Proficiency</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="legend-grid">
+        <div class="legend-card" reveal [delay]="0">
+          <div class="legend-badge expert">Expert (90%+)</div>
+          <p>Deep expertise with 5+ years of hands-on project experience.</p>
+        </div>
+        <div class="legend-card" reveal [delay]="100">
+          <div class="legend-badge advanced">Advanced (80–89%)</div>
+          <p>Strong command with multiple complex project deliveries.</p>
+        </div>
+        <div class="legend-card" reveal [delay]="200">
+          <div class="legend-badge proficient">Proficient (70–79%)</div>
+          <p>Solid working knowledge with consistent application in projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

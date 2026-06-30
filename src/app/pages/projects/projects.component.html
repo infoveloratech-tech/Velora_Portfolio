@@ -1,0 +1,87 @@
+<div class="page-wrapper">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Our Work</span>
+      <h1 class="section-title">Featured Projects</h1>
+      <div class="divider"></div>
+      <p class="section-desc">A selection of projects we have delivered with precision and passion.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header" reveal>
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">What We've Built</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" *ngFor="let project of projects; let i = index" reveal [delay]="i * 120">
+          <div class="project-image" [style.background]="project.gradient">
+            <div class="project-overlay"></div>
+            <div class="project-icon">
+              <i [class]="project.icon"></i>
+            </div>
+            <div class="project-num">{{ (i + 1).toString().padStart(2, '0') }}</div>
+            <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit
+            </a>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">{{ project.category }}</div>
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.desc }}</p>
+            <div class="project-tech">
+              <span *ngFor="let tech of project.tech">{{ tech }}</span>
+            </div>
+            <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fas fa-arrow-right"></i> View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block" reveal [delay]="0">
+          <i class="fas fa-project-diagram"></i>
+          <strong>3+</strong>
+          <span>Projects Delivered</span>
+        </div>
+        <div class="stat-block" reveal [delay]="100">
+          <i class="fas fa-smile"></i>
+          <strong>100%</strong>
+          <span>Client Satisfaction</span>
+        </div>
+        <div class="stat-block" reveal [delay]="200">
+          <i class="fas fa-calendar-check"></i>
+          <strong>On Time</strong>
+          <span>Delivery Record</span>
+        </div>
+        <div class="stat-block" reveal [delay]="300">
+          <i class="fas fa-globe"></i>
+          <strong>Global</strong>
+          <span>Client Base</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section project-cta">
+    <div class="container">
+      <div class="cta-inner" reveal>
+        <div class="cta-icon"><i class="fas fa-lightbulb"></i></div>
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's talk about how we can turn your idea into a polished digital product.</p>
+        <a href="/contact" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Start a Project
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
