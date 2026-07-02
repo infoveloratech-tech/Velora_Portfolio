@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "dependencies": {
     "@angular/common": "^21.1.0",
@@ -22,7 +24,8 @@
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^21.1.0",
     "@types/three": "^0.185.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.107.0"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.4": true,
