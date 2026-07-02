@@ -46,8 +46,8 @@
   box-shadow: var(--shadow-lg);
 }
 .about-logo img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   margin: 0 auto 24px;
   animation: float 6s ease-in-out infinite;
