@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { RevealDirective } from '../../directives/reveal.directive';
 
@@ -6,6 +6,7 @@ import { RevealDirective } from '../../directives/reveal.directive';
   selector: 'app-home',
   standalone: true,
   imports: [RouterLink, RevealDirective],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
